@@ -1,0 +1,12 @@
+<h1> There are {{ count }} words in your text</h1>
+
+<h1>The most used word was: {{maxword}} and it was used {{maxnumber}} time(s) </h1>
+
+<a href="{% url 'home'%}">Start Again</a>
+
+<h1 style="color:blue;">Word Count:</h1>
+ {% for i, j in finallist%} {{i}} {{hash}} {{j}} <br/> {%endfor%}
+
+ <h1 style="color:red;">The input text:</h1>
+
+ <p style = "font-style:italic;">{{fulltext}}</p>
